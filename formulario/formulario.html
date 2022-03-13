@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div> <!--Container generico....-->
+        <h1 id="title">Cadastro de Desenvolvedor</h1>
+        <p id="subtitle">Digite suas informações</p>
+        <br> <!--Quebra de linha-->
+    </div>
+
+    <form > <!--usada para informaões de formulário-->
+        <fieldset class="group"> <!--usada para agrupar elementos relacionados em um formulário//bem parecido com o "label"-->
+            <div class="inf" >
+                <label for="name"><strong>Name</strong></label> <!--legenda para um item em uma interface de usuário-->
+                <input type="text" name="name" id="name" required> <!--required é obrigatorio antes de enviar o formulario-->
+            </div>
+
+            <div class="inf">
+                <label for="surname"><strong>Sobrenome</strong></label>
+                <input type="text" name="surname" id="surname" required><!--é usado para criar controles interativos para formulários baseados na web para receber dados do usuário-->
+            </div>
+
+        </fieldset>
+
+        <div class="inf">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="inf">
+            <label ><strong>Qual área você desenvolve ?</strong></label>
+            <label>
+                <input type="radio" name="dev" value="frontend" checked > Front-end
+            </label> <!--checked : o input tipo radio já começa marcado(preenchido)//value representa o valor inicial do input-->
+
+            <label >
+                <input type="radio" name="dev" value="backend" > Back-end
+            </label>
+
+            <label >
+                <input type="radio" name="dev" value="fullstack"> Fullstack
+            </label>
+        </div>
+
+        <div class="inf>
+            
+            <label for="Xp"><strong>Experiencia</strong></label>
+            <select id="Xp" required> <!--Select : controle de menus de opçoes-->
+                <option selected disabled >Selecione</option> <!--selected:ja começa sendo selecionado,disabled : desabilitado ou seja ele não pode ser selecionado-->
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+                
+            </select>
+        </div>
+
+        <fieldset class="group">
+            <div id="check">
+                <label><strong>Selecione suas tecnologias :</strong></label><br><br>
+                <input type="checkbox" id="tec1"  value="HTML">
+                <label for="tec1">HTML</label>
+                <input type="checkbox" id="tec2"  value="CSS">
+                <label for="tec2"> CSS</label>
+                <input type="checkbox" id="tec3"  value="JavaScript">
+                <label for="tec3"> JavaScript</label>
+                <input type="checkbox" id="tec4"  value="PHP">
+                <label for="tec4"> PHP</label>
+                <input type="checkbox" id="tec5"  value="C#">
+                <label for="tec5"> C#</label>
+                <input type="checkbox" id="tec6"  value="Python">
+                <label for="tec6"> Python</label>
+                <input type="checkbox" id="tec7"  value="Java">
+                <label for="tec7"> Java</label>
+            </div>
+
+        </fieldset>
+
+        <div class="inf">
+            <br>
+            <label for="exp"><strong>Conte um pouco mais da sua experiência:</strong></label>
+            <textarea  id="exp"  rows="6" style="width: 26em"> </textarea><!--representa um controle de edição para uma caixa de texto, útil quando você quer permitir ao usuário informar um texto  extenso em formato livre-->
+        </div>
+
+        <button id="btn" type="submit" >Concluído</button>
+    </form>
+</body>
+</html>

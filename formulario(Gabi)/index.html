@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Notas</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="container">
+        <div class="box">
+            <div id="menu">
+                <div class="menu1"></div>
+                <div class="menu1"></div>
+                <div class="menu1"></div>
+            </div>
+            
+
+            <div id="top">
+                <h1>NOTE RELEASES</h1>
+                <label for="subjects"><strong>Select a discipline </strong></label>
+                <select  id="subjects" required>
+                    <option selected disabled >~Select a option~</option>
+                    <option value="op1" >Math</option>
+                    <option value="op2" >English</option>
+                    <option value="op3" >Physics</option>
+                </select>
+            </div>
+
+            <div id="tab">
+                <table>
+                    <tr>
+                        <th id="x">Student's name</th>
+                        <th>Test 1</th>
+                        <th>Test 2</th>
+                        <th>Exam</th>
+                        <th>Average</th>
+                        <th>Faults</th>
+
+                    </tr>
+                
+                    <tr>
+                        <td class="name">Joana da Silva</td>
+                        <td><input id="btn1" type="number" required></td>
+                        <td><input id="btn2" type="number" required></td>
+                        <td><input id="btn3"type="number" required></td>
+                        <td><div id="M1" class="aux"></div></td>
+                        <td><input type="number" id="f" required></td>
+                        
+                    </tr>
+                
+                    <tr>
+                        <td class="name" >Bruno Santos</td>
+                        <td><input id="btn4" type="number" required></td>
+                        <td><input id="btn5" type="number" required></td>
+                        <td><input id="btn6" type="number" required></td>
+                        <td><div id="M2" class="aux"></div></td>
+                        <td><input type="number"  id="f"  required></td>
+
+                    </tr>
+                
+                    <tr>
+                        <td class="name" >Gabi Nevez</td>
+                        <td><input id="btn7" type="number" required></td>
+                        <td><input id="btn8" type="number" required></td>
+                        <td><input id="btn9" type="number" required></td>
+                        <td><div id="M3" class="aux" ></div></td>
+                        <td><input type="number" id="f"  required></td>
+                        
+                    </tr>
+                
+                </table>
+            </div>
+            
+            <div id="btn">
+                <div class="btnn1">
+                    <button type="button" id="save">Save</button>
+                </div>
+                <div class="btnn2">
+                    <button type="button" id="clean">Clean</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="JS.js"></script>
+</body>
+</html>
